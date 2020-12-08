@@ -39,7 +39,6 @@ func sayYourName(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(Name)
 	str := validate(Name)
 	fmt.Println(str)
-	fmt.Fprintf(w, str)
 }
 
 func validate(str string) string {
